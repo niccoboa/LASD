@@ -4,28 +4,27 @@ import math
 
 import string
 
-import matplotlib.pyplot as plt # plot graph
-import matplotlib.ticker as mticker # custom interval freqeuncy axis
-import matplotlib.patches as mpatches # custom legend element(s)
+import matplotlib.pyplot as plt # disegnare grafici
+import matplotlib.ticker as mticker # intervalli sull'asse x personalizzabili
+import matplotlib.patches as mpatches # elementi legenda personalizzabili
 
 import numpy as np
 
 
-# Table Size
-m = 1500
-# Total elements saved
-n = 0
+m = 1500	# dimensione tabella hash
+n = 0 		# totale elementi salvati
 
-# Table declaration
-T1 = [[] for _ in range(m)] # It'll be used w/ division method
-T2 = [[] for _ in range(m)] # It'll be used w/ multiplication method
+# Dichiarazione delle tabelle
+T1 = [[] for _ in range(m)] # Metodo divisione
+T2 = [[] for _ in range(m)] # Metodo moltiplicazione
 
-A=(math.sqrt(5)-1)/2
+A=(math.sqrt(5)-1)/2 		# Valore di Knuth
 
-# Collision(s) counters
+# Contatori delle collisioni
 collision_div = 0
 collision_mul = 0
 
+# Utile per il plot
 collision_div_array = [0]
 collision_mul_array = [0]
 
@@ -46,19 +45,22 @@ class Hash:
 		self.m = m
 
 	
-	### HASH FUNCTIONS USED
-	# Division Method
+	### FUNZIONI HASH UTILIZZATE
+	
+	# Metodo Divisione
 	def func_div(key):
 		return key % m
 
-	# Multiplication Method
+	# Metodo moltiplicazione
 	def func_mul(key):
 	    #A = 0.8
 	    m=len(T2)
 	    return math.floor(m * ((key * A) % 1))
 
     
-    ### METHODS IMPLEMENTED
+    ### METODI IMPLEMENTATI
+
+    # Inserimento utente in T1 e T2
 	def insert(User):
 		hash_key = Hash.func_div(User.key)
 	
@@ -86,7 +88,7 @@ class Hash:
 		if n==m:
 			plt.axvline(x=m, color = 'g', ls = "dashed", label = "α = 100%")
 
-		
+	# Ricerca utente in T1
 	def searchT1(key):
 		hash_key = Hash.func_div(key)
 
@@ -98,6 +100,7 @@ class Hash:
 				print('Not Found')
 		return False
 
+	# Ricerca utente in T2
 	def searchT2(key):
 		hash_key = Hash.func_mul(key)
 
@@ -109,6 +112,7 @@ class Hash:
 				print('Not Found')
 		return False
 
+	# Stampa tutto: tabelle + informazioni sulle collisioni
 	def print_all():
 		Hash.get_load_factor()
 		print("T1 (Division Method) \t\t --> ", collision_div , "collisions")
@@ -116,9 +120,11 @@ class Hash:
 		print("T2 (Multiplication Method) --> ", collision_mul , "collisions")
 		Hash.display_hash(T2)
 
+	# Stampa load factor alpha
 	def get_load_factor():
 		print("Load Factor (α=n/m): " , n , "/" , m, "=" , (n/m)*100 , "%\n")
 
+	# Stampa tabelle (grafica)
 	def display_hash(T): 
 		for i in range(len(T)):
 			print("|",str(i).rjust(2, '0'),"|", end = "")  	
@@ -128,7 +134,7 @@ class Hash:
 			print()
 		print()
 
-	# Delete User from list T[h(k)[x]]
+	# Rimuove utente dalle tabelle T1 e T2 --> T[h(k)[x]]
 	def delete(User):
 		hash_key = Hash.func_div(User.key)
 		global n
@@ -185,8 +191,8 @@ plt.plot(collision_mul_array, label="Metodo Moltiplicazione - " + str( round(A, 
 
 plt.title("Confronto Funzioni Hash (chiavi casuali) - Primo caso")  #| α=" + str(round((n/m)*100,1)) + "%")
 
-#plt.gca().xaxis.set_major_locator(mticker.MultipleLocator(1))  # uncomment ONLY if you got just few data
-#plt.gca().yaxis.set_major_locator(mticker.MultipleLocator(1))  # uncomment ONLY if you got just few data
+#plt.gca().xaxis.set_major_locator(mticker.MultipleLocator(1))  # scommenta solo se ci sono pochi dati
+#plt.gca().yaxis.set_major_locator(mticker.MultipleLocator(1))  # scommenta solo se ci sono pochi dati
 
 plt.xlabel("n (elementi in tabella)")
 plt.ylabel("Collisioni")
