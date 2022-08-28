@@ -1,0 +1,51 @@
+\section{Descrizione del lavoro svolto} \label{descr_lavoro}
+
+Per completare l'esercizio sono stati effettuati diversi test volti a evidenziare il comportamento delle tabelle a seconda di specifici dati in ingresso.
+
+L'approccio seguito in primo luogo è stato quello del \textit{worst case analysis}, volto a studiare cioè l'evoluzione delle tabelle hash quando in ingresso vengono inseriti i dati considerati appunto \textit{peggiori} per i relativi metodi.
+\\ Successivamente lo studio si è concentrato su una analisi più generale e casuale, con l'obiettivo di riassumere al meglio i vantaggi e gli svantaggi di ogni metodo quando in input si hanno dati non predicibili.
+\\Osserveremo allo stesso tempo il progressivo riempimento della tabella man mano che cresce il \textit{load factor} $\alpha$.
+
+\subsection{Sviluppo e implementazione dei metodi}
+I test sono stati effettuati in \verb|Python v3.10| utilizzando \verb|Matplotlib| come libreria per la creazione dei grafici.
+\\Al fine di confrontare al meglio i due metodi è stata creata una tabella apposita per ognuno: \verb|T1| è riempita da oggetti della classe \verb|User| attraverso il metodo della divisione; \verb|T2| ospita i medesimi oggetti della classe \verb|User| ma questi sono inseriti sfruttando il metodo della moltiplicazione\footnote{In alcuni esempi (come il \ref{worst_case_mol}), sono state utilizzate più di due tabelle per completare il confronto}.
+\\ Ogni oggetto è composto dall'abbinamento degli attributi \verb|key| e \verb|value|, dove quest'ultimo è un identificatore \textit{human-readable}, cioè una stringa caratteristica dell'oggetto stesso (facoltativo ai fini degli esperimenti ma utile per la comprensione e per possibili implementazioni più complesse).
+\\ Le principali funzioni del programma sono:
+\begin{itemize}
+    \item \verb|func_div(key)| e \verb|func_mul(key)|: Funzioni hash
+    \item \verb|insert(User)|: Inserimento simultaneo di un utente in \verb|T1| e \verb|T2|
+    \item \verb|delete(User)|: Rimozione di un utente da \verb|T1| e \verb|T2|
+    \item \verb|searchT1(key)|: Ricerca chiave in \verb|T1| (analoga per \verb|T2|)
+    \item \verb|print_all()|: Visualizzazione su console delle tabelle, del \textit{load factor} e del numero di collisioni rilevate su ciascuna tabella
+    \item \verb|plt.show()|: Visualizzazione dei grafici sulla GUI di \verb|Matplotlib|
+\end{itemize}
+
+
+\subsection{Ipotesi}
+Le ipotesi che assumeremo vere sono le seguenti:
+\begin{enumerate}
+    \item[i.] Non possono esserci due \verb|User| con la stessa chiave;
+    \item[ii.] Le collisioni sono gestite con il \textit{concatenamento};
+    \item[iii.] Le tabelle hanno tutte la stessa dimensione $m$.
+\end{enumerate}
+
+
+
+\begin{comment}
+    \lstset{
+      basicstyle=\footnotesize,
+      xleftmargin=.3\textwidth, xrightmargin=.2\textwidth
+    }
+    \begin{lstlisting}
+        insert(T,100,"Greco")
+    \end{lstlisting}
+    
+    Abbiamo poi ottenuto il seguente grafico che mostra...
+    
+    \begin{figure}[htb]
+    \begin{center}
+    \includegraphics[scale=0.5]{src/img/graph1.pdf}
+    \caption{This is a figure.}
+    \end{center}
+    \end{figure}
+\end{comment}

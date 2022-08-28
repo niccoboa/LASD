@@ -1,0 +1,25 @@
+\section{Metodi utilizzati per il calcolo di \boldmath\texorpdfstring{$h(k)$}{h(k)}} \label{metodi}
+
+% % % % % % % % % % % % % % % % % % M. DIVISIONE
+\subsection{Metodo della divisione} \label{metodo_div}
+Il metodo della divisione permette di calcolare l'hash come il resto della divisione tra una chiave $k$ e un determinato $m$ che rappresenta la dimensione della tabella.
+
+La funzione hash utilizzata è la seguente: 
+\begin{equation}
+    \label{eq:metodo_div}
+    \boxed{h(k)= k \text{ mod }  m}
+\end{equation}
+
+$Nota$: Risulta influente al fine di limitare le collisioni scegliere come $m$ un numero primo non vicino a una potenza di $2$.
+
+% % % % % % % % % % % % % % % % % % M. MOLTIPLICAZIONE
+\subsection{Metodo della moltiplicazione}
+\label{metodo_mol}
+Il metodo della moltiplicazione calcola l'hash utilizzando la funzione qui di seguito:
+\begin{equation}
+    \label{eq:metodo_mol}
+    \boxed{h(k)= \lfloor m \ (kA \text{ mod } 1) \rfloor}
+\end{equation}
+In pratica viene estratta la parte frazionaria di $kA$ (con $A \in (0;1)$ una costante da scegliere\footnote{L'informatico statunitense Knuth raccomanda $A \approx \varphi^{-1} = (\sqrt{5}-1)/2 = 0,618033...$ , ovvero l'inverso della $sezione \ aurea$ \cite{fibo_hash} \label{knuth_value} }), quindi viene moltiplicata per $m$ e infine prelevata la parte intera inferiore.
+
+$Nota$: a differenza di \eqref{eq:metodo_div} in questo caso il valore di $m$ non è critico. Ciò detto, tipicamente si pone $m=2^{p} \ , \ p \in \mathbb{N}$  (ossia come potenza intera di $2$).
