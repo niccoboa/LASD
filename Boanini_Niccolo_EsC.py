@@ -71,8 +71,9 @@ class Hash:
 		if len(T1[hash_key]) > 0:	# chiave già presente nella cella
 		    global collision_div 	# c'è collisione
 		    collision_div += 1 		# aggiorna contatore totale collisioni
-
-		collision_div_array.append(collision_div) # aggiorna array colliioni progressivo
+			
+		
+		collision_div_array.append(collision_div)	# aggiorna array colliioni progressivo
 		T1[hash_key].insert(0, User) # inserisce in testa
 
 		hash_key = Hash.func_mul(User.key) # calcolo chiave con m. moltiplicazione
@@ -207,8 +208,8 @@ plt.ylabel("Collisioni")
 
 plt.legend()
 
-# salva plot 
-plt.savefig('line_plot.pdf')
+# salva plot su file
+# plt.savefig('line_plot.pdf')
 
 # mostra plot
 plt.show()

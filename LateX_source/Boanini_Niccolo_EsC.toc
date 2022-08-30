@@ -1,0 +1,14 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {section}{\numberline {1}Metodi utilizzati per il calcolo di \boldmath $h(k)$}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Metodo della divisione}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Metodo della moltiplicazione}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Descrizione del lavoro svolto}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Sviluppo e implementazione dei metodi}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Ipotesi}{3}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Risultati attesi}{3}{section.3}%
+\contentsline {section}{\numberline {4}Risultati ottenuti}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Caso peggiore metodo divisione}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Caso peggiore metodo moltiplicazione (?)}{6}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Caso randomico}{7}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Conclusioni}{9}{section.5}%
