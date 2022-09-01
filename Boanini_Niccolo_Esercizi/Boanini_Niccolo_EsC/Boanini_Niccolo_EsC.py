@@ -11,8 +11,8 @@ import matplotlib.patches as mpatches # elementi legenda personalizzabili
 import numpy as np
 
 
-m = 20	# dimensione tabella hash
-n = 0 	# totale elementi salvati
+m = 1500	# dimensione tabella hash
+n = 0 		# totale elementi salvati
 
 # Dichiarazione delle tabelle
 T1 = [[] for _ in range(m)] # Metodo divisione
@@ -166,6 +166,7 @@ class Hash:
 
 ######################################
 
+"""
 #TEST 1
 chiave = m
 for i in range(16):
@@ -173,9 +174,9 @@ for i in range(16):
 	chiave+=m
 
 Hash.print_all()
-
-
 """
+
+
 #TEST 2
 
 tot_ele = m+20
@@ -185,7 +186,7 @@ random.shuffle(key_universe)
 for i in range(tot_ele):
 	Hash.insert(User(key_universe[i], "-"))
 # end test 2
-"""
+
 
 Hash.print_all()
 
