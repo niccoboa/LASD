@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.22)  30 AUG 2022 18:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.22)  10 SEP 2022 14:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/Nicco/Desktop/ES_C/LateX_source/Boanini_Niccolo_EsC.tex
-(c:/Users/Nicco/Desktop/ES_C/LateX_source/Boanini_Niccolo_EsC.tex
+**c:/Users/Nicco/Desktop/Boanini_Niccolo_Esercizi/Boanini_Niccolo_Esercizi/Boanini_Niccolo_EsC/LateX_source/Boanini_Niccolo_EsC.tex
+(c:/Users/Nicco/Desktop/Boanini_Niccolo_Esercizi/Boanini_Niccolo_Esercizi/Boanini_Niccolo_EsC/LateX_source/Boanini_Niccolo_EsC.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-05> (C:\Program Files\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -658,29 +658,29 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 15
  (C:\Program Files\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )) (src/3_ris_attesi.tex) (src/4_ris_ottenuti.tex (src/4.1_worstcase_div.tex [3]
-<src/img/worstcase.pdf, id=120, 462.52798pt x 346.89601pt>
+<src/img/worstcase.pdf, id=120, 624.41281pt x 372.19049pt>
 File: src/img/worstcase.pdf Graphic file (type pdf)
 <use src/img/worstcase.pdf>
 Package pdftex.def Info: src/img/worstcase.pdf  used on input line 25.
-(pdftex.def)             Requested size: 300.63962pt x 225.47972pt.
+(pdftex.def)             Requested size: 355.91899pt x 212.15077pt.
  (src/TIKZ/worstcase.tex)) (src/4.2_worstcase_mol.tex [4 <./src/img/worstcase.pdf>] [5]
-<src/img/worstcase_mul.pdf, id=186, 462.52798pt x 346.89601pt>
+<src/img/worstcase_mul.pdf, id=191, 462.52798pt x 346.89601pt>
 File: src/img/worstcase_mul.pdf Graphic file (type pdf)
 <use src/img/worstcase_mul.pdf>
-Package pdftex.def Info: src/img/worstcase_mul.pdf  used on input line 12.
+Package pdftex.def Info: src/img/worstcase_mul.pdf  used on input line 14.
 (pdftex.def)             Requested size: 300.63962pt x 225.47972pt.
 ) (src/4.3_random.tex [6 <./src/img/worstcase_mul.pdf>]
-<src/img/CASO1.pdf, id=242, 462.52798pt x 346.89601pt>
+<src/img/CASO1.pdf, id=246, 462.52798pt x 346.89601pt>
 File: src/img/CASO1.pdf Graphic file (type pdf)
 <use src/img/CASO1.pdf>
 Package pdftex.def Info: src/img/CASO1.pdf  used on input line 9.
 (pdftex.def)             Requested size: 241.19934pt x 180.90039pt.
-<src/img/CASO2.pdf, id=243, 462.52798pt x 346.89601pt>
+<src/img/CASO2.pdf, id=247, 462.52798pt x 346.89601pt>
 File: src/img/CASO2.pdf Graphic file (type pdf)
 <use src/img/CASO2.pdf>
 Package pdftex.def Info: src/img/CASO2.pdf  used on input line 12.
 (pdftex.def)             Requested size: 244.79736pt x 183.59993pt.
-<src/img/CASO3.pdf, id=244, 462.52798pt x 346.89601pt>
+<src/img/CASO3.pdf, id=248, 462.52798pt x 346.89601pt>
 File: src/img/CASO3.pdf Graphic file (type pdf)
 <use src/img/CASO3.pdf>
 Package pdftex.def Info: src/img/CASO3.pdf  used on input line 15.
@@ -691,16 +691,16 @@ Package rerunfilecheck Info: File `Boanini_Niccolo_EsC.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  24789 strings out of 478584
- 453953 string characters out of 2854216
- 739894 words of memory out of 3000000
+ 455448 string characters out of 2854216
+ 740006 words of memory out of 3000000
  42437 multiletter control sequences out of 15000+600000
  569541 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,8n,92p,798b,1073s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,8n,92p,862b,1073s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmib10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Boanini_Niccolo_EsC.pdf (10 pages, 476647 bytes).
+Output written on Boanini_Niccolo_EsC.pdf (10 pages, 476636 bytes).
 PDF statistics:
- 539 PDF objects out of 1000 (max. 8388607)
+ 543 PDF objects out of 1000 (max. 8388607)
  53 named destinations out of 1000 (max. 500000)
  134 words of extra memory for PDF output out of 10000 (max. 10000000)
 

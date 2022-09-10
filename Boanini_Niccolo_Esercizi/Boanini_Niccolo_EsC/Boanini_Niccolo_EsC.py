@@ -11,7 +11,7 @@ import matplotlib.patches as mpatches # elementi legenda personalizzabili
 import numpy as np
 
 
-m = 1500	# dimensione tabella hash
+m = 16	# dimensione tabella hash
 n = 0 		# totale elementi salvati
 
 # Dichiarazione delle tabelle
@@ -166,17 +166,21 @@ class Hash:
 
 ######################################
 
-"""
+
+
 #TEST 1
 chiave = m
-for i in range(16):
+for i in range(17):
 	Hash.insert(User(chiave, string.ascii_uppercase[i]))
 	chiave+=m
 
 Hash.print_all()
+
+## intervallo unitario celle sugli assi x e y
+plt.gca().xaxis.set_major_locator(mticker.MultipleLocator(1))  # scommenta solo se ci sono pochi dati
+plt.gca().yaxis.set_major_locator(mticker.MultipleLocator(1))  # scommenta solo se ci sono pochi dati
+
 """
-
-
 #TEST 2
 
 tot_ele = m+20
@@ -186,7 +190,7 @@ random.shuffle(key_universe)
 for i in range(tot_ele):
 	Hash.insert(User(key_universe[i], "-"))
 # end test 2
-
+"""
 
 Hash.print_all()
 
@@ -195,13 +199,11 @@ Hash.print_all()
 
 # plt.plot(0, 0, 'go', label = "Fattore Caricamento α")
 plt.plot(collision_div_array, label="Metodo Divisione")
-plt.plot(collision_mul_array, label="Metodo Moltiplicazione - " + str( round(A, 3)) + "...")
+plt.plot(collision_mul_array, label="Metodo Moltiplicazione (A = Valore di Knuth ≃ " + str( round(A, 3)) + ")")
 
 # plt.title("Confronto Funzioni Hash (chiavi casuali) - Primo caso")  #| α=" + str(round((n/m)*100,1)) + "%")
 
-## intervallo unitario celle sugli assi x e y
-#plt.gca().xaxis.set_major_locator(mticker.MultipleLocator(1))  # scommenta solo se ci sono pochi dati
-#plt.gca().yaxis.set_major_locator(mticker.MultipleLocator(1))  # scommenta solo se ci sono pochi dati
+
 
 plt.xlabel("n (elementi in tabella)")
 plt.ylabel("Collisioni")
